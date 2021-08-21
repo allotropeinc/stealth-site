@@ -1,0 +1,64 @@
+@font-face {
+	font-family: "Portland";
+	src: url("/assets/fonts/Portland-Bold.woff2") format("woff2"),
+		url("/assets/fonts/Portland-Bold.woff") format("woff");
+		font-weight: bold;
+}
+
+@font-face {
+	font-family: "Portland";
+	src: url("/assets/fonts/Portland-Regular.woff2") format("woff2"),
+		url("/assets/fonts/Portland-Regular.woff") format("woff");
+}
+
+html, 
+body {
+	height: 100%;
+}
+
+body {
+	background: linear-gradient(135deg, #007D5A 0%, #4CAF50 100%) no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	
+	margin: 0;
+	font-family: "Portland", -apple-system, system-ui, "Helvetica Neue", "Helvetica";
+	color: white;
+}
+
+h1 {
+	font-size: 48px;
+	margin: 0;
+	
+	margin-bottom: 8px;
+}
+
+h2 {
+	font-size: 32px;
+	margin: 0;
+	font-weight: normal;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	
+}
+
+.text {
+	text-align: center;
+	max-width: 768px;
+}
+
+.logo {
+	padding: 32px;
+}
+
+.logo-container {
+	height: 0;
+}
