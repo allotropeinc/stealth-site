@@ -17,7 +17,7 @@ body {
 }
 
 body {
-	background: linear-gradient(135deg, #007D5A 0%, #4CAF50 100%) no-repeat center center fixed; 
+	background: linear-gradient(135deg, #007D5A 0%, #4CAF50 100%) #269655 no-repeat center center fixed; 
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -62,4 +62,8 @@ h2 {
 
 .logo-container {
 	height: 0;
+}
+
+span.line {
+	display: inline-block;
 }
