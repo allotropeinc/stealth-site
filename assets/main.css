@@ -7,6 +7,21 @@
 
 @font-face {
 	font-family: "Portland";
+	src: url("/assets/fonts/Portland-BoldItalic.woff2") format("woff2"),
+		url("/assets/fonts/Portland-BoldItalic.woff") format("woff");
+		font-weight: bold;
+		font-style: italic;
+}
+
+@font-face {
+	font-family: "Portland";
+	src: url("/assets/fonts/Portland-Italic.woff2") format("woff2"),
+		url("/assets/fonts/Portland-Italic.woff") format("woff");
+		font-style: italic;
+}
+
+@font-face {
+	font-family: "Portland";
 	src: url("/assets/fonts/Portland-Regular.woff2") format("woff2"),
 		url("/assets/fonts/Portland-Regular.woff") format("woff");
 }
@@ -41,6 +56,10 @@ h2 {
 	font-weight: normal;
 }
 
+p {
+	font-size: 16px;
+}
+
 .container {
 	display: flex;
 	flex-direction: column;
@@ -66,4 +85,58 @@ h2 {
 
 span.line {
 	display: inline-block;
+}
+
+.material-regular {
+	/* Shit like this is why web programming is *the best* /s */
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
+	background: rgba(255,255,255,0.60);
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+	border-radius: 32px;
+}
+
+.material-regular > p, h1, h2, h3, h4, h5, h6, li, ul {
+	color: black;
+}
+
+.button-container {
+	display: flex;
+}
+
+.button {
+	background: #000000;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+	/* make it larger to compensate for the lack of true squircles */
+	border-radius: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	padding: 5px 8px;
+	margin: 0;
+	flex-grow: 1;
+	text-align: center;
+}
+
+.button:active {
+	box-shadow: none;
+	opacity: 40%;
+}
+
+@media (prefers-color-scheme: dark) {
+	.material-regular {
+		-webkit-backdrop-filter: blur(5px);
+		backdrop-filter: blur(5px);
+		background: rgba(40,40,40,0.60);
+		box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+		border-radius: 32px;
+	}
+	
+	.material-regular > p, h1, h2, h3, h4, h5, h6, li, ul {
+		color: white;
+	}
+	
+	.material-regular > .portlandlogo {
+		filter: invert();
+	}
 }
