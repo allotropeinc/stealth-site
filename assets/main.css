@@ -96,7 +96,7 @@ span.line {
 	border-radius: 32px;
 }
 
-.material-regular > p, h1, h2, h3, h4, h5, h6, li, ul {
+.material-regular > p, .material-regular > h1, .material-regular > h2, .material-regular > h3, .material-regular > h4, .material-regular > h5, .material-regular > h6, .material-regular > li, .material-regular > ul {
 	color: black;
 }
 
@@ -132,7 +132,7 @@ span.line {
 		border-radius: 32px;
 	}
 	
-	.material-regular > p, h1, h2, h3, h4, h5, h6, li, ul {
+	.material-regular > p, .material-regular > h1, .material-regular > h2, .material-regular > h3, .material-regular > h4, .material-regular > h5, .material-regular > h6, .material-regular > li, .material-regular > ul {
 		color: white;
 	}
 	
